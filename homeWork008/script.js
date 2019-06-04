@@ -14,8 +14,17 @@ let appData = {
 };
 
 for (let i=0; i < 2; i++) {
-    appData.expenses[prompt("Введите обязательную статью расходов в этом месяце")] =
-    +prompt("Во сколько обойдется?");
+    let a = prompt("Введите обязательную статью расходов в этом месяце"), 
+        b = +prompt("Во сколько обойдется?");
+    if ((a != null) && (b != null) && (a != "") && (b != "")) {
+        appData.expenses[a] = b;
+    } else {
+        alert("Повторите ввод");
+        i--;
+    }
+
 }
-alert("Ваш бюджет: " + money/30);
+appData.moneyPerDay = appData.Moneys / 30;
+
+alert("Ваш бюджет: " + appData.moneyPerDay);
 console.log(appData.expenses);
