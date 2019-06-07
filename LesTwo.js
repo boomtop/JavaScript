@@ -1,4 +1,4 @@
-'use strict'
+' use strict';
 
 let num = 50;
 if  (num <49){
@@ -7,7 +7,7 @@ if  (num <49){
     console.log('много');
 } else {
     console.log('Верно!');
-};
+}
 
 //тернарный оператор вместо if
 (num == 50) ? console.log('Верно!!') : console.log('неверно');
@@ -47,5 +47,5 @@ for (let i = 1; i < 8; i++) {
     if (i == 2) {
         continue;
     }
-    console.log(i)
+    console.log(i);
 }
