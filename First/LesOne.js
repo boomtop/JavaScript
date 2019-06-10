@@ -1,7 +1,7 @@
 'use strict' //ES6 стандарт (нужно ставить) IE9- не поддерживает
 
 //sdd
-// person - объкт
+// person - объект
 let person = {
     name: "Vic",
     age: 19,
